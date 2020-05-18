@@ -1,0 +1,151 @@
+body,html{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.MainSection{
+    width:100%;
+    height:100%;
+    img{
+        width:15px;
+        height:15px;
+        position: relative;
+        top: 2px;
+    }
+    header{
+        width:100%;
+        display: flex;
+        background: #94ecf61c;
+        .search{
+            width:20%;
+            background :#ddf4f6;
+            .searchText{
+                padding: 1rem;  
+                img{
+                    left: 15px;
+                }              
+            }
+        }
+        .addNew{
+            width:80%;
+            padding-top:1rem;
+            .new{
+                float:left;
+                margin: 0 3rem 0 1rem;
+            }
+        }
+    }
+section{
+    width:100%;
+    height:100%;
+    display: flex;
+    .folderSection{
+        width:20%;
+        height:100%;
+        background:#f3f3f3;
+        // padding:2rem;
+        .folderText{
+            padding: 1rem 2rem 0;
+            font-weight: bold;
+            cursor: pointer;
+            img{
+                width:12px;
+            }
+        }
+        ul{
+            list-style: none;
+            padding:0;
+            overflow-y: hidden;
+            font-size: 14px;
+            line-height: 2;
+            li{
+                padding:0.5rem 3rem;
+                cursor:pointer
+            }
+            .activeClass{
+                background :#ddf4f6;
+            }
+
+        }
+    }
+    .focusedSection{
+        width: 20%;
+        border-right: 1px solid #e7e7e7;
+        button{
+            border: none;
+            background: none;
+            outline:none;
+            cursor:pointer;
+        }
+        .tabs{
+            display:table;
+            padding: 1rem 0;
+            position:relative;
+            .focusTab{
+                text-decoration: underline;
+                float: left;
+                margin: 0 2em 0 1em;
+                cursor:pointer;
+            }
+            .otherTab{
+                text-decoration: underline;
+                cursor:pointer;
+                float: left;
+                margin-right: 3rem;
+            }
+            .filter{
+                float:right;
+                color:blue;
+                img{
+                    width:12px;
+                }
+            }
+            .filterDisplay{
+                position: absolute;
+                background: white;
+                width: 100%;
+                list-style: none;
+                padding: 0.5rem 0rem 1rem 0.5rem;
+                z-index: 9;
+                margin-top: 37px;
+                line-height: 2;
+                border-bottom: 1px solid #e7e7e7;
+                box-shadow: 1px 2px 3px grey;
+                li{
+                    cursor:pointer;
+                    padding-left: 0.6rem;
+                }
+                .activeFilter{
+                    background:#ddf4f6;
+                }
+            }
+        }
+        .activeClass{
+            background :#ddf4f6;
+        }
+        .focusedInboxList{
+            font-size:14px;
+            padding: 1rem;
+            line-height: 1.5;
+            border-bottom: 1px solid #ececec;
+            cursor:pointer;
+            position:relative;
+            .subject{
+                color: blue;
+            }
+            .actionIcons{
+                position: absolute;
+                top: 1rem;
+                right: 5px;
+                bottom: 1rem;
+            }
+        }
+    }
+    .contentSection{
+        width:50%;
+        padding:2rem;
+        font-size: 14px;
+    }
+}
+
+}
