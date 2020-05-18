@@ -78,7 +78,6 @@ function App() {
   * @param {function} deleteMail delete the selected mail from the list
   */
   const deleteMail = (id) => {
-    debugger
     if (selectedFolder != 'Deleted Items') {
       var data = [];
       var delData = []
@@ -98,7 +97,7 @@ function App() {
             deletedItems.splice(j, 1)
           }
         })
-        setDeletedItems(deletedItems);
+        setDeletedItems([...deletedItems]);
       }
     }
   }
