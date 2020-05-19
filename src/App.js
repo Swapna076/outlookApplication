@@ -214,6 +214,7 @@ function App() {
                   <div>Outlook Team</div>
                   <div> {e.mId}</div>
                   <div className="subject">{e.subject}</div>
+                  <div className="timestamp">{e.time}...</div>
                 </div>
                 <div className="actionIcons">
                   <span onClick={() => deleteMail(e.mId)}><img src={deleteIcon} style={{ 'marginRight': '5px' }} ></img></span>

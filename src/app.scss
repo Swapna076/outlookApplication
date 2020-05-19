@@ -149,12 +149,23 @@ section{
             .subject{
                 color: blue;
             }
+            .timestamp{
+                text-align: right;
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+                font-size: 10px;
+            }
             .actionIcons{
                 position: absolute;
+                display:none;
                 top: 1rem;
                 right: 5px;
                 bottom: 1rem;
             }
+        }
+        .focusedInboxList:hover .actionIcons{
+            display:block;
         }
     }
     .contentSection{

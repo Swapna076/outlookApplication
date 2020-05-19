@@ -3,6 +3,7 @@
 		"mId": "guid-1",
 		"unread": true,
 		"flag": false,
+		"time": "Mon 10:00AM",
 		"subject": "Training Program",
 		"content": "About Microsoft Virtual Academy<br/>Microsoft Virtual Academy provides free online training by world-class experts to help you build your technical skills and advance your career. Make it your destination of choice to get started on the latest Microsoft technologies and join this vibrant community."
 	},
@@ -10,6 +11,7 @@
 		"mId": "guid-2",
 		"unread": false,
 		"flag": false,
+		"time": "Mon 2:15PM",
 		"subject": "Empower your future",
 		"content": "We foster our pipeline of future leaders with 47 employee networks and 7 global employee resource groups, servicing an active community of thousands across Microsoft"
 	},
@@ -17,6 +19,7 @@
 		"mId": "guid-3",
 		"unread": true,
 		"flag": false,
+		"time": "Tue 11:01AM",
 		"subject": "Training Program",
 		"content": "About Microsoft Virtual Academy<br/>Microsoft Virtual Academy provides free online training by world-class experts to help you build your technical skills and advance your career. Make it your destination of choice to get started on the latest Microsoft technologies and join this vibrant community."
 	},
@@ -24,6 +27,7 @@
 		"mId": "guid-4",
 		"unread": false,
 		"flag": false,
+		"time": "Wed 03:50PM",
 		"subject": "Empower your future",
 		"content": "We foster our pipeline of future leaders with 47 employee networks and 7 global employee resource groups, servicing an active community of thousands across Microsoft"
 	}
