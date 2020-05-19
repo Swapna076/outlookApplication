@@ -10,6 +10,7 @@ import down from "./down.png";
 import flag from "./flag.png";
 import flagged from "./flagged.png"
 import deleteIcon from "./delete.png"
+import square from "./square.png"
 
 function App() {
   /**
@@ -173,6 +174,7 @@ function App() {
   }, [deletedItems])
   return (
     <div className="MainSection">
+      <div className="outlook"><span className="mailIcon"><img src={square}></img></span>Outlook Mail</div>
       <header>
         <div className="search">
           <div className="searchText">Search Mail and People <img src={search}></img></div>
@@ -213,8 +215,8 @@ function App() {
                   <div className="subject">{e.subject}</div>
                 </div>
                 <div className="actionIcons">
-                  <div onClick={() => deleteMail(e.mId)}><img src={deleteIcon} style={{ 'marginRight': '10px' }} ></img></div>
-                  <div onClick={() => flagMail(e.mId)}><img src={e.flag && e.flag ? flagged : flag}></img></div>
+                  <span onClick={() => deleteMail(e.mId)}><img src={deleteIcon} style={{ 'marginRight': '10px' }} ></img></span>
+                  <span onClick={() => flagMail(e.mId)}><img src={e.flag && e.flag ? flagged : flag}></img></span>
                 </div>
               </div>
             ))
@@ -225,7 +227,12 @@ function App() {
           }
         </div>
         <div className="contentSection">
-          {content}
+          <span className="useIcon">G1</span>
+          <span className="selectedMail">
+            <div> {'User Name'} </div>
+            <div>{'name@outlook.com'}</div>
+          </span>
+          <div className="content"> {content}</div>
         </div>
       </section >
     </div >
