@@ -211,11 +211,12 @@ function App() {
             mailsList.map((e, i) => (
               <div style={{ 'background': e.flag && e.flag ? '#ff080824' : '' }} className={`${"focusedInboxList"} ${activeMail === e.mId ? "activeClass" : ''}`} key={i}>
                 <div onClick={() => selectedMail(e.mId)}>
+                  <div>Outlook Team</div>
                   <div> {e.mId}</div>
                   <div className="subject">{e.subject}</div>
                 </div>
                 <div className="actionIcons">
-                  <span onClick={() => deleteMail(e.mId)}><img src={deleteIcon} style={{ 'marginRight': '10px' }} ></img></span>
+                  <span onClick={() => deleteMail(e.mId)}><img src={deleteIcon} style={{ 'marginRight': '5px' }} ></img></span>
                   <span onClick={() => flagMail(e.mId)}><img src={e.flag && e.flag ? flagged : flag}></img></span>
                 </div>
               </div>
