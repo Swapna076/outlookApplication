@@ -3,6 +3,7 @@
 		"mId": "guid-3",
 		"unread": true,
 		"flag": false,
+		"time": "Mon 2:15PM",
 		"subject": "Pre Approved Loan",
 		"content": "Congratulations ! <u>Credit card<u> is being shipped to you today!"
 	},
@@ -10,6 +11,7 @@
 		"mId": "guid-4",
 		"unread": true,
 		"flag": false,
+		"time": "Tue 11:01AM",
 		"subject": "You won a lottery!",
 		"content": "You have just won the New York official lottery. Please send us your address so that we may start the transfer."
 	}
